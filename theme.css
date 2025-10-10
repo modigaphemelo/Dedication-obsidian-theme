@@ -24,8 +24,8 @@
     --inline-code:                #8b5cf6;
     --code-block:                 #83a598; 
     --text-a:                     #f8c537; 
-    --interactive-accent:         #00ffff;
-    --text-accent:                #f8c537; 
+    --interactive-accent:         #0066cc;
+    --text-accent:                #00ffff; 
     --text-on-accent:             #fff;
     --interactive-accent-rgb:     #f8c537; 
     --vim-cursor:                 #f8c537;
@@ -69,8 +69,8 @@ background-color: #483699;
     --interactive-before:         #a89984;
     --background-modifier-border: #00ffff;
     --text-a:                     #961327;
-    --interactive-accent:         #00ffff;
-    --text-accent:                #961327;
+    --interactive-accent:         #0066cc;
+    --text-accent:                #00ffff;
     --interactive-accent-rgb:     #961327;
     --vim-cursor:                 #961327;
     --text-selection:             #EDC180;
@@ -90,7 +90,7 @@ background-color: #808080;
 
 /* Apply font to editor (source and preview modes) and UI */
 body, .cm-scroller, .markdown-preview-view {
-  font-family: var(--default-font); /* Times New Roman with fallbacks */
+  font-family: var(--default-font) !important; /* Times New Roman with fallbacks */
 }
 
 /*=========================================================================================*/
@@ -148,7 +148,7 @@ color:var(--text-muted);
 }
 #calendar-container td,
 #calendar-container .day {
-border-radius:0;
+border-radius:0 !important;
 }
 #calendar-container .day {
 padding-top:0px;
@@ -661,7 +661,7 @@ body {
 /* Full-width tables */
 body:not(.table-width-obsidian-default) .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
 body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) table {
-  width: 100%;
+  width: 100% !important;
 }
 
 /* Define HSL components for text-title-h1 to support dynamic background */
@@ -874,12 +874,12 @@ img:hover {
 /* Live Preview Line Numbers */
 
 .theme-dark .markdown-source-view.mod-cm6 .cm-gutters {
-  color: #00ffff; /* Matches accent text (#00e6e6) for dark theme */
+  color: #00ffff !important; /* Matches accent text (#00e6e6) for dark theme */
   background: var(--background-primary); /* Matches editor background (#1c1c2e) */
 }
 
 .theme-light .markdown-source-view.mod-cm6 .cm-gutters {
-  color: #00ffff; /* Matches accent text (#00b7eb) for light theme */
+  color: #00ffff !important; /* Matches accent text (#00b7eb) for light theme */
   background: var(--background-primary); /* Matches editor background (#f5f5f5) */
 }
 
@@ -1060,12 +1060,12 @@ body:not(.heading-indicator-off) .markdown-preview-sizer > div > :is(h1, h2, h3,
 }
 
 /* Designated header colors */
-.h1-color-designated { --h1-color: var(--text-title-h1); } /* #e600e6 dark, #cc00c4 light */
-.h2-color-designated { --h2-color: var(--text-title-h2) ; } /* #00e6e6 dark, #00b7eb light */
-.h3-color-designated { --h3-color: var(--text-title-h3) ; } /* #ff8c00 dark/light */
-.h4-color-designated { --h4-color: var(--text-title-h4) ; } /* #3333ff dark, #0000cc light */
-.h5-color-designated { --h5-color: var(--text-title-h5) ; } /* #e60000 dark, #cc0000 light */
-.h6-color-designated { --h6-color: var(--text-title-h6) ; } /* #cccc00 dark/light */
+.h1-color-designated { --h1-color: var(--text-title-h1) !important; } /* #e600e6 dark, #cc00c4 light */
+.h2-color-designated { --h2-color: var(--text-title-h2) !important; } /* #00e6e6 dark, #00b7eb light */
+.h3-color-designated { --h3-color: var(--text-title-h3) !important; } /* #ff8c00 dark/light */
+.h4-color-designated { --h4-color: var(--text-title-h4) !important; } /* #3333ff dark, #0000cc light */
+.h5-color-designated { --h5-color: var(--text-title-h5) !important; } /* #e60000 dark, #cc0000 light */
+.h6-color-designated { --h6-color: var(--text-title-h6) !important; } /* #cccc00 dark/light */
 
 /* Collapse indicator SVGs and colors */
 body:not(.collapse-icon-restore) .is-live-preview .HyperMD-header .collapse-indicator.collapse-icon svg,
