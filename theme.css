@@ -33,7 +33,7 @@
     --pre-code:                   #1e1e1e; 
     --interactive-before:         #7c6f64;
     --background-modifier-border: #00ffff;
-    --text-selection:            #f8c537;
+    --text-selection:            #0066cc;
 }
 
 .theme-dark .cm-s-obsidian span.obsidian-search-match-highlight {
@@ -73,7 +73,7 @@ background-color: #483699;
     --text-accent:                #00ffff;
     --interactive-accent-rgb:     #961327;
     --vim-cursor:                 #961327;
-    --text-selection:             #EDC180;
+    --text-selection:             #0066cc;
     --text-white:                 #ffffff;
 }
 
