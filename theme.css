@@ -23,7 +23,7 @@
     /* ^^^ added for hover over bracket internal links */
     --inline-code:                #8b5cf6;
     --code-block:                 #83a598; 
-    --text-a:                     #f8c537; 
+    --text-a:                     rgb(248, 197, 55); 
     --interactive-accent:         #0066cc;
     --text-accent:                #00ffff; 
     --text-on-accent:             #fff;
@@ -32,7 +32,7 @@
 
     --pre-code:                   #1e1e1e; 
     --interactive-before:         #7c6f64;
-    --background-modifier-border: #00ffff;
+    --background-modifier-border: rgb(0, 255, 255);
     --text-selection:            #0066cc;
 }
 
@@ -777,7 +777,7 @@ body > .progress-bar-container .progress-bar-indicator > * {
 
 /* Numbered Lists */
 body {
-    --accent: rgb(8, 145, 178); /* Cyan from rainbow palette */
+    --accent: rgb(8, 145, 178);
 }
 
 @font-face {
@@ -796,7 +796,7 @@ ol > li {
 }
 
 ol > li:hover {
-    color: rgba(8, 145, 178, 0.8); /* Slightly faded cyan on hover */
+    color: rgba(248, 197, 55, 0.8);
 }
 
 ol li:not(.task-list-item)::before {
@@ -819,7 +819,7 @@ body {
     --list-spacing: 0.075em;
     --list-bullet-size: 0.3em;
     --list-bullet-size-alt: calc(var(--list-bullet-size) / 2);
-    --list-marker-color: rgb(33, 33, 33); /* Dark gray for default contrast */
+    --list-marker-color: rgb(8, 145, 178); /**/
     --list-numbered-style: decimal;
 }
 
