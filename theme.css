@@ -80,12 +80,12 @@ background-color: #483699;
 .theme-light .cm-s-obsidian span.obsidian-search-match-highlight {
 background-color: #808080;
 }
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* Font Styling */
 
 :root {
-  --default-font: 'Times New Roman', Times, serif; /* Primary font with fallbacks */
+  --default-font: font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;; /* Primary font with fallbacks */
 }
 
 /* Apply font to editor (source and preview modes) and UI */
@@ -93,7 +93,7 @@ body, .cm-scroller, .markdown-preview-view {
   font-family: var(--default-font) !important; /* Times New Roman with fallbacks */
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /*==== Checkbox ====*/
 
@@ -106,7 +106,38 @@ ul>li.task-list-item[data-task="X"] {
     color: var(--interactive-accent);
 }
 
-/*==================================== End ====================================*/
+/* Round checkboxes in preview and editor */
+input[type="checkbox"],
+.cm-formatting-task {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  border: 1px solid var(--text-faint);
+  padding: 0;
+  vertical-align: middle;
+}
+
+.cm-s-obsidian span.cm-formatting-task {
+  color: transparent;
+  width: 1.25em !important;
+  height: 1.25em;
+  display: inline-block;
+}
+
+input[type="checkbox"]:focus {
+  outline: 0;
+}
+input[type="checkbox"]:checked,
+.cm-formatting-task.cm-property {
+  background-color: var(--text-accent-hover);
+  border: 1px solid var(--text-accent-hover);
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-image: url('data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, -6.000000)" fill="%23ffffff"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+
+/*=========================================================================================*/
 
 /*==== Calender ====*/
 .container#calendar-container .calendar {
@@ -165,7 +196,7 @@ outline:2px solid var(--color-cyan);;
 background: var(--background-primary);
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /*==== Blockquote ====*/
 .cm-quote,
@@ -207,7 +238,7 @@ background: var(--background-primary);
     background: rgb(8, 145, 178);
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* File Pane */
 
@@ -378,7 +409,7 @@ body:not(.file-icon-remove) .workspace-leaf-content[data-type="bookmarks"] svg.l
     --folder-color: hsl(330, 100%, 45%); /* Pink */
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* Header Styling */
 
@@ -530,7 +561,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 22px;
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* Setting modal */
 
@@ -608,9 +639,9 @@ button.mod-cta:hover, button.mod-cta:focus {
   background-color: #05033370;
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
-/* status bar */
+/* ====== status bar====== */
 
 body {
     --status-bar-background: transparent;
@@ -632,7 +663,7 @@ body {
     height: 24px;
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* Table styles */
 
@@ -677,7 +708,7 @@ body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source
   --text-title-h1-l: 40%;
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* divider */
 body {
@@ -691,7 +722,7 @@ body {
     height: calc(var(--divider-vertical-height) - var(--header-height) - 2px);
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* Pendulum Startup Animation */
 body > .progress-bar-container .progress-bar-indicator {
@@ -724,7 +755,7 @@ body > .progress-bar-container .progress-bar-indicator > * {
     }
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* Tooltip Styling */
 .tooltip {
@@ -749,7 +780,7 @@ body > .progress-bar-container .progress-bar-indicator > * {
   font-weight: 600; /* Slightly bolder for hierarchy */
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* Title Styling */
 
@@ -773,17 +804,13 @@ body > .progress-bar-container .progress-bar-indicator > * {
   color: var(--text-normal); /* #1a1a1a for high contrast */
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* Numbered Lists */
 body {
     --accent: rgb(8, 145, 178);
 }
 
-@font-face {
-    font-family: Times;
-    src: url(data:application/octet-stream;base64,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);
-}
 
 ol {
     list-style: none;
@@ -802,7 +829,6 @@ ol > li:hover {
 ol li:not(.task-list-item)::before {
     content: counter(li) ".";
     color: var(--accent);
-    font-family: Times, serif;
     display: inline-block;
     margin-left: -2.5em;
     margin-right: 0.5em;
@@ -811,7 +837,7 @@ ol li:not(.task-list-item)::before {
     text-shadow: 0 0 0.3em var(--accent); /* Reduced blur for clarity */
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* Lists */
 body {
@@ -819,18 +845,7 @@ body {
     --list-spacing: 0.075em;
     --list-bullet-size: 0.3em;
     --list-bullet-size-alt: calc(var(--list-bullet-size) / 2);
-    --list-marker-color: rgb(8, 145, 178); /**/
-    --list-numbered-style: decimal;
-}
-
-/* Common list bullet styles */
-body:not(.ul-marker-restore) .markdown-rendered .has-list-bullet .list-bullet::after,
-body:not(.ul-marker-restore) .markdown-source-view.mod-cm6 .HyperMD-list-line.cm-line div.cm-fold-indicator~span.cm-formatting .list-bullet::after,
-body:not(.ul-marker-restore) .markdown-source-view.mod-cm6 .HyperMD-list-line.cm-line span.cm-hmd-list-indent~span.cm-formatting .list-bullet::after,
-body:not(.ul-marker-restore) .markdown-source-view.mod-cm6 .HyperMD-list-line.cm-line>span.cm-formatting:first-of-type .list-bullet::after {
-    width: var(--list-bullet-size);
-    height: var(--list-bullet-size);
-    background-color: var(--list-marker-color);
+    --list-marker-color: rgb(8, 145, 178); 
 }
 
 /* Level 1: Circle */
@@ -858,7 +873,7 @@ body:not(.ul-marker-restore) .markdown-source-view.mod-cm6 .HyperMD-list-line.Hy
     --list-bullet-transform: rotate(45deg);
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* img hover zoom out img*/
 img:hover {
@@ -869,7 +884,7 @@ img:hover {
   transform: none;
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* Live Preview Line Numbers */
 
@@ -883,7 +898,7 @@ img:hover {
   background: var(--background-primary); /* Matches editor background (#f5f5f5) */
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* Graph View Styling for Both Themes */
 
@@ -949,7 +964,7 @@ img:hover {
   background-color: var(--background-primary-alt); /* Matches light theme alt background (#e6e6e6) */
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* Empty State */
 body {
@@ -997,7 +1012,7 @@ body {
     }
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* Editor Styling */
 
@@ -1321,7 +1336,7 @@ body:is(.h2-divider-on, .h3-divider-on, .h4-divider-on, .h5-divider-on, .h6-divi
   .theme-light body.h6-divider-on h6::after { background-image: linear-gradient(to left, var(--text-title-h6) 30%, transparent 70%); }
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* Horizontal Rule */
 
@@ -1361,7 +1376,7 @@ body {
   -webkit-mask-repeat: no-repeat;
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* Links  */
 body {
@@ -1500,7 +1515,7 @@ body {
   font-weight: 600;
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* Text Emphasis */
 
@@ -1551,7 +1566,7 @@ body {
   background-image: linear-gradient(62deg, var(--text-title-h2) 0%, var(--text-title-h4) 100%); /* Gradient from h2 to h6 colors */
 }
 
-/*==================================== End ====================================*/
+/*=========================================================================================*/
 
 /* Embedded Images */
 img {
@@ -1569,7 +1584,8 @@ img:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
 }
 
-/*==================================== End ====================================*/
+
+/*=========================================================================================*/
 
 /* Accessibility Focus Styles */
 a:focus, button:focus, input:focus, textarea:focus {
@@ -1621,5 +1637,3 @@ a:focus, button:focus, input:focus, textarea:focus {
   body.h5-divider-on h5::after { background-image: linear-gradient(to left, var(--h5-color) 30%, transparent 70%); }
   body.h6-divider-on h6::after { background-image: linear-gradient(to left, var(--h6-color) 30%, transparent 70%); }
 }
-
-/*==================================== End ====================================*/
