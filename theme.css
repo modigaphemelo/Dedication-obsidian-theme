@@ -432,7 +432,6 @@ h1, h2, h3, h4, h5, h6 {
 .cm-header-1:not(.cm-formatting),
 .markdown-preview-view h1 {
   color: var(--text-title-h1); 
-  text-shadow: 0 0 0.4em var(--text-title-h1);
   border-bottom: 1px dotted var(--text-title-h1); /* Dotted border matches color */
   padding-bottom: 4px; /* Slightly increased for balance */
 }
@@ -440,7 +439,6 @@ h1, h2, h3, h4, h5, h6 {
 .cm-header-2:not(.cm-formatting),
 .markdown-preview-view h2 {
   color: var(--text-title-h2);
-  text-shadow: 0 0 0.4em var(--text-title-h2);
   border-bottom: 1px dotted var(--text-title-h2);
   padding-bottom: 4px;
 }
@@ -448,7 +446,6 @@ h1, h2, h3, h4, h5, h6 {
 .cm-header-3:not(.cm-formatting),
 .markdown-preview-view h3 {
   color: var(--text-title-h3);
-  text-shadow: 0 0 0.4em var(--text-title-h3);
   border-bottom: 1px dotted var(--text-title-h3);
   padding-bottom: 4px;
 }
@@ -456,7 +453,6 @@ h1, h2, h3, h4, h5, h6 {
 .cm-header-4:not(.cm-formatting),
 .markdown-preview-view h4 {
   color: var(--text-title-h4);
-  text-shadow: 0 0 0.4em var(--text-title-h4);
   border-bottom: 1px dotted var(--text-title-h4);
   padding-bottom: 4px;
 }
@@ -464,7 +460,6 @@ h1, h2, h3, h4, h5, h6 {
 .cm-header-5:not(.cm-formatting),
 .markdown-preview-view h5 {
   color: var(--text-title-h5);
-    text-shadow: 0 0 0.4em var(--text-title-h5);
   border-bottom: 1px dotted var(--text-title-h5);
   padding-bottom: 4px;
 }
@@ -472,7 +467,6 @@ h1, h2, h3, h4, h5, h6 {
 .cm-header-6:not(.cm-formatting),
 .markdown-preview-view h6 {
   color: var(--text-title-h6);
-    text-shadow: 0 0 0.4em var(--text-title-h6);
   border-bottom: 1px dotted var(--text-title-h6);
   padding-bottom: 4px;
 }
