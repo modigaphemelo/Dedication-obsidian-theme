@@ -6,6 +6,7 @@
     --background-secondary-alt:   #3D3D3D;
     --text-normal:                #faf2d6;
     --text-faint:                 #c0b0a0;
+    --code-background: var(--background-secondary-alt);
 
     /* Heading colors */
     --text-title-h1:              #cc00c4;
@@ -48,7 +49,8 @@ background-color: #483699;
     --background-primary-alt:     #d4d4d4; 
     --background-secondary-alt:   #707070; 
     --text-normal:                #1A2023;
-    --text-faint:                 #999999; 
+    --text-faint:                 #999999;
+    --code-background: var(--background-secondary-alt);
 
     /* Heading colors */
     --text-title-h1:              #cc00c4;
