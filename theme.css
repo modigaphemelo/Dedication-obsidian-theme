@@ -1633,3 +1633,12 @@ a:focus, button:focus, input:focus, textarea:focus {
   body.h5-divider-on h5::after { background-image: linear-gradient(to left, var(--h5-color) 30%, transparent 70%); }
   body.h6-divider-on h6::after { background-image: linear-gradient(to left, var(--h6-color) 30%, transparent 70%); }
 }
+
+body {
+    /* Callouts */
+    --callout-border-width: 1px;
+    --callout-border-opacity: 1;
+    --callout-padding: 16px 24px 0 24px;
+
+}
+
